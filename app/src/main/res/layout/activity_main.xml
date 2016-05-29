@@ -49,5 +49,29 @@
             progress:progress_text_size="15sp"
             progress:progress_text_offest="25dp"
             android:progress="50" />
+
+        <com.whf.customprogressbar.CustomRoundProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_round_progressbar"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            progress:progress_radio_size="50dp"
+            progress:progress_reach_height="5dp"
+            android:progress="0" />
+
+        <com.whf.customprogressbar.CustomRoundProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            progress:progress_radio_size="80dp"
+            progress:progress_reach_color="#DC143C"
+            progress:progress_unreach_color="#EECBAD"
+            progress:progress_text_size="20sp"
+            progress:progress_text_color="#A020F0"
+            progress:progress_reach_height="10dp"
+            progress:progress_unreach_height="5dp"
+            android:progress="50" />
     </LinearLayout>
 </ScrollView>

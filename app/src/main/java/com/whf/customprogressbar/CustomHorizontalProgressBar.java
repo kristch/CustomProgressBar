@@ -9,7 +9,7 @@ import android.util.TypedValue;
 import android.widget.ProgressBar;
 
 /**
- * 自定义ProgressBar
+ * 自定义水平的ProgressBar
  * Created by WHF on 2016/5/28.
  */
 public class CustomHorizontalProgressBar extends ProgressBar {
@@ -28,15 +28,15 @@ public class CustomHorizontalProgressBar extends ProgressBar {
     /*
         定义进度条属性使用值
      */
-    private int mTextSize = sp2px(DEFAULT_TEXT_SIZE);
-    private int mTextColor = DEFAULT_TEXT_COLOR;
-    private int mTextOffset = dp2px(DEFAULT_TEXT_OFFSET);
-    private int mUnreachColor = DEFAULT_UNREACH_COLOR;
-    private int mUnreachHeight = dp2px(DEFAULT_UNREACH_HEIGHT);
-    private int mReachColor = DEFAULT_REACH_COLOR;
-    private int mReachHeight = dp2px(DEFAULT_REACH_HEIGHT);
+    protected int mTextSize = sp2px(DEFAULT_TEXT_SIZE);
+    protected int mTextColor = DEFAULT_TEXT_COLOR;
+    protected int mTextOffset = dp2px(DEFAULT_TEXT_OFFSET);
+    protected int mUnreachColor = DEFAULT_UNREACH_COLOR;
+    protected int mUnreachHeight = dp2px(DEFAULT_UNREACH_HEIGHT);
+    protected int mReachColor = DEFAULT_REACH_COLOR;
+    protected int mReachHeight = dp2px(DEFAULT_REACH_HEIGHT);
 
-    private Paint mPaint = new Paint();
+    protected Paint mPaint = new Paint();
     private int mRealWidth;//进度条实际显示的宽度
 
 
@@ -189,7 +189,7 @@ public class CustomHorizontalProgressBar extends ProgressBar {
      * @param dpval
      * @return
      */
-    private int dp2px(int dpval) {
+    protected int dp2px(int dpval) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 dpval, getResources().getDisplayMetrics());
     }
@@ -200,7 +200,7 @@ public class CustomHorizontalProgressBar extends ProgressBar {
      * @param spval
      * @return
      */
-    private int sp2px(int spval) {
+    protected int sp2px(int spval) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
                 spval, getResources().getDisplayMetrics());
     }

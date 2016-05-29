@@ -17,4 +17,7 @@
         <attr name="progress_text_size" />
         <attr name="progress_text_offest" />
     </declare-styleable>
+    <declare-styleable name="CustomRoundProgressBar">
+        <attr name="progress_radio_size" format="dimension" />
+    </declare-styleable>
 </resources>
